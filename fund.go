@@ -18,3 +18,7 @@ func NewFund(initialBalance int) *Fund {
 func (f *Fund) Balance() int {
 	return f.balance
 }
+
+func (f *Fund) Withdraw(amount int) {
+	f.balance -= amount
+}
